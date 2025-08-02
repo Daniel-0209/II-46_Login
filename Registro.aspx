@@ -7,20 +7,24 @@
 
             <div class="form-floating">
                 <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" TextMode="SingleLine" placeholder="Name"></asp:TextBox>
-                <label for="MainContent_txtNombre">Name</label>
+                <label for="MainContent_txtNombre">Nombre</label>
             </div>
+            <div class="form-floating">
+    <asp:TextBox ID="txtApellido" runat="server" CssClass="form-control" TextMode="SingleLine" placeholder="Name"></asp:TextBox>
+    <label for="MainContent_txtNombre">Apellido</label>
+</div>
 
             <div class="form-floating">
                 <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email" placeholder="Email"></asp:TextBox>
-                <label for="MainContent_txtEmail">Email address</label>
+                <label for="MainContent_txtEmail">Email</label>
             </div>
 
             <div class="form-floating">
                 <asp:TextBox ID="txtPass" runat="server" CssClass="form-control" TextMode="Password" placeholder="Password"></asp:TextBox>
-                <label for="MainContent_txtPass">Password</label>
+                <label for="MainContent_txtPass">Contraseña</label>
                 <asp:RequiredFieldValidator id="RequiredFieldValidatorPass"
                     ControlToValidate="txtPass"
-                    Display="Dynamic"
+                    Display="Dynamic" 
                     ErrorMessage="La contraseña es requerida"
                     runat="server"/>
             </div>
